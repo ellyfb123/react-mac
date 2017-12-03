@@ -1,0 +1,289 @@
+.sg-Header {
+	position: relative;
+    background-color: #ffffff;
+    border-bottom: solid 10px #cc0000;
+    color: inherit;
+    margin-bottom: 0;
+
+    .sg-Header-content {
+        max-width: 950px;
+    	margin: auto;
+    	padding: 10px;
+    	padding-bottom: 0;
+    }
+
+    .sg-Header-column {
+    	display: table-cell;
+    	&:first-child {
+    		vertical-align: bottom;
+    	}
+    	&:last-child {
+    		width: 100%;
+    		vertical-align: middle;
+    	}
+
+    	.sg-Header-logo {
+    	    display: block;
+		    width: 166px;
+		    height: 73px;
+		    margin-right: 5px;
+		    overflow: hidden;
+		    background-color: transparent;
+		    border: 0;
+		    background-image: url(../../../styles/assets/Logo-header--retina.png);
+		    background-repeat: no-repeat;
+		    background-size: 166px 73px;
+
+		    &:before {
+		        display: block;
+			    width: 0;
+			    height: 150%;
+			    content: "";
+		    }
+    	}
+    }
+
+    .sg-u-textRight {
+    	text-align: right !important;
+    }
+
+    .sg-Header-title {
+    	margin: 0;
+    }
+
+    .sg-Type--heading1 {
+    	font-size: 2.016rem;
+    	font-weight: normal;
+    	font-height: 1.3em;
+    	color: #2a2a2a;
+    }
+}
+
+.sg-Main {
+	text-align: left;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+	.sg-Main-content {
+		flex: 1 0 auto;
+		width: 100%;
+		max-width: 950px;
+		margin: auto;
+		padding: 20px 10px 10px 10px;
+	}
+
+	h1 {
+		margin-top: 0;
+		font-size: 2.016rem;
+		font-weight: normal;
+		line-height: 1.3em;
+		margin-bottom: 10px;
+		font-style: normal;
+		color: #2a2a2a;
+	}
+
+    p {
+        margin: 0 0 10px 0;
+        font-weight: 100;
+    }
+
+    .sg-Grid {
+        margin-bottom: 80px;
+    }
+
+    .sg-Grid-row {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .sg-Grid-col12 {
+        box-sizing: border-box;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        flex: 1 0 auto;
+    }
+
+    .sg-Grid-col7--large {
+        flex-basis: 58.33333333%;
+        max-width: 58.33333333%;
+    }
+
+    .sg-Grid-col5--large {
+        flex-basis: 41.66666667%;
+        max-width: 41.66666667%;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 2.5px;
+        font-size: 1.512rem;
+        font-weight: normal;
+        line-height: 1.3em;
+    }
+
+    .sg-Form-question {
+        margin-bottom: 20px;
+    }
+
+    .sg-Form-label {
+        display: inline-block;
+        margin: 0 0 5px 0;
+        cursor: pointer;
+        font-size: 1.008rem;
+        font-weight: bold;
+        color: #2a2a2a;
+    }
+
+    .sg-Input {
+        display: block;
+        width: 100%;
+        min-width: 4em;
+        max-width: 17.5em;
+        padding: 10px;
+        margin: 0 0 5px 0;
+        color: #2a2a2a;
+        vertical-align: middle;
+        font-size: 1.12em;
+        font-size: 1.008rem;
+        background-color: #ffffff;
+        background-image: none;
+        border: 1px solid #d3cece;
+        border-radius: 4px;
+    }
+
+    .sg-Btn {
+        display: inline-block;
+        min-width: 2.7em;
+        font-size: 110%;
+        font-weight: bold;
+        line-height: 1.21;
+        text-align: center;
+        text-shadow: none;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none;
+        padding: 0.95em;
+        margin: 5px 0px;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+        text-decoration: none;
+        border-radius: 0.3em;
+        outline: none;
+        transition: all 0.2s;
+    }
+
+    .sg-Btn--primary {
+        color: rgb(255, 255, 255);
+        background-color: rgb(146, 182, 5);
+    }
+
+    .sg-Accordion {
+        border-radius: 4px;
+        margin-bottom: 10px;
+        &.sg-Accordion--block {
+            border: 1px solid #d3cece;
+            background-color: #ffffff;
+
+            .sg-Accordion-label {
+                position: relative;
+                display: block;
+                padding: 0 0 0 26px;
+                width: 100%;
+                text-align: left;
+                border-width: 0;
+                border-radius: 4px;
+                font-weight: bold;
+                color: #cc0000;
+                background-color: transparent;
+                padding-top: 13px;
+                padding-left: 31px;
+                margin-bottom: 0;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+                &.is-selected {
+                    color: #2a2a2a;
+                    border-radius: 4px 4px 0 0;
+                }
+            }
+        }
+    }
+
+    #footer-copy {
+        font-weight: 100;
+
+        .sg-Type--small {
+        font-size: 85%;
+            margin: 0px 0px 10px;
+        }
+
+        .sg-type--size12 {
+            font-size: 0.756rem;
+        }
+    } 
+}
+
+.sg-Footer {
+    position: relative;
+    background-color: #ffffff;
+    border-top: solid 10px #cc0000;
+    color: inherit;
+    flex: none;
+    font-size: 90%;
+    text-align: left;
+
+    .sg-Footer-content {
+        max-width: 950px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .sg-List-horizontal {
+        margin: 0 0 5px 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 0 0 0.7em;
+            vertical-align: top;
+            list-style-type: none;
+            text-indent: 0;
+            margin: 0.4em 0.5em 0.4em 0.55em;
+            line-height: 1.2;
+            border-left: solid 1px #ccc;
+
+            &:first-child {
+                padding-left: 0;
+                border-left: none;
+                margin-left: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #cc0000;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: #8b1111;
+                }
+            }
+        }
+    }
+
+    .sg-Type--small {
+        font-size: 95%;
+        opacity: 0.75;
+        font-weight: 100;
+        margin: 0 0 10px 0;
+    }
+}   
